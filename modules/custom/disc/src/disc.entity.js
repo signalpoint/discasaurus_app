@@ -16,10 +16,14 @@ function disc_entity_view(build, entity) {
             _theme: 'view',
             _path: 'course-holes/' + entity.id(),
             _format: 'ul',
+            _attributes: {
+              id: 'course-holes-' + entity.id()
+            },
             _row_callback: function(row) {
               var node = dg.Node(row);
               return dg.l(node.getTitle(), 'node/' + node.id());
-            }
+            },
+            _weight: 420
           };
           break;
         default: break;
