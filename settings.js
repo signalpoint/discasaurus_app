@@ -37,7 +37,11 @@ drupalgap.settings.blocks.frank = {
     main: {}
   },
   footer: {
-    //my_custom_block: { }
+    admin_menu: {
+      roles: [
+        { target_id: 'administrator', visible: true }
+      ]
+    }
   }
 };
 
