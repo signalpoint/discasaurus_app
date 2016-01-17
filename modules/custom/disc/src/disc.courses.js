@@ -1,0 +1,5 @@
+disc.courses = {
+  getHoles: function() {
+
+  }
+};
